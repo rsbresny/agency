@@ -4,8 +4,8 @@ subtitle: Head of Hacker Experience
 layout: default
 modal-id: 1
 date: 2017-02-05
-img: dreams.png
-thumbnail: dreams-thumbnail.png
+img: ProfHacks_img_full.png
+thumbnail: ProfHacks_thumbnail.png
 alt: image-alt
 project-date: February 2017
 client: Rowan University
