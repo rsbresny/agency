@@ -26,16 +26,12 @@ $(function() {
                     email: email,
                     message: message
                 },
-                dataType: 'json'
+                dataType: 'json',
             })
         },
         filter: function() {
             return $(this).is(":visible");
         },
-        success: function(){
-          $('#formBlock').hide();
-          $('#thankYouBlock').show();
-        }
     });
 
     $("a[data-toggle=\"tab\"]").click(function(e) {
