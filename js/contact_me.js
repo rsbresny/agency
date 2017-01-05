@@ -26,23 +26,16 @@ $(function() {
                     email: email,
                     message: message
                 },
-                dataType: 'json',
-                beforeSend: function(){
-                  $contactForm.append('<div class = "alert alert--loading">Sending message...</div>');
-                },
-                success: function(data) {
-                  $contactForm.find('alert--loading').hide();
-                  $contactForm.append('<div class = "alert alert--success">Message sent!</div>');
-                },
-                error: function(err) {
-                  $contactForm.find('alert--loading').hide();
-                  $contactForm.append('<div class = "alert alert--error">Oops, there was an error.</div>');
-                }
+                dataType: 'json'
             })
         },
         filter: function() {
             return $(this).is(":visible");
         },
+        success: function(){
+          $('#formBlock').hide();
+          $('#thankYouBlock').show();
+        }
     });
 
     $("a[data-toggle=\"tab\"]").click(function(e) {
