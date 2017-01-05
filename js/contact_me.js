@@ -26,7 +26,7 @@ $(function() {
                     email: email,
                     message: message
                 },
-                dataType: 'json',
+                dataType: 'json'
             })
         },
         filter: function() {
